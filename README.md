@@ -1,9 +1,14 @@
 ## 1x1px
 Tiny command-line app to generate 1x1-pixel PNG files
 
+### Building
+Simply run
+
+    $ make
+
 ### Usage
 
-    1x1px [color]
+    $ 1x1px [color]
 
 Where color is in the format
 
