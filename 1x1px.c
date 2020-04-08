@@ -1,3 +1,7 @@
+/*
+ * 1x1px.c: a simple utility to generate 1x1-pixel PNG images
+ */
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -52,7 +56,11 @@ int main(int argc, char *argv[]){
   char cwd[1024];
   getcwd(cwd,sizeof(cwd));
 
-  printf("Color %s successfully saved to %s/%s\n",color_hash,cwd,filename);
+  char *quiet = (argc == 3 ? argv[2] : NULL);
+
+  if(quiet == NULL){
+    printf("Color %s successfully saved to %s/%s\n",color_hash,cwd,filename);
+  }
 
   free(color);
   free(filename);
