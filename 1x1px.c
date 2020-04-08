@@ -37,7 +37,7 @@ int main(int argc, char *argv[]){
   }
 
   char *color = malloc(6);
-  char *filename = malloc(10);
+  char *filename = malloc(11);
   int i = 0;
   for(char *c=color_hash+1;*c;c++){
     color[i]    = *c;
